@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog sobre Diego Godín</title>
+</head>
+<body>
+    <header>
+        <h1>Blog sobre Diego Godín</h1>
+        <img src="godin.jpg" alt="Logotipo del Colegio"width="500"> 
+    </header> 
+    
+    <nav>
+        <ul>
+            <li><a href="#carrera">Carrera</a></li>
+            <li><a href="#logros">Logros</a></li>
+            <li><a href="#vida-personal">Vida Personal</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <section id="carrera">
+            <h2>Carrera</h2>
+            <p>Diego Godín es conocido por su destacada carrera en equipos como Atlético de Madrid, Inter de Milán, y la selección de Uruguay...</p>
+        </section>
+        
+        <section id="logros">
+            <h2>Logros</h2>
+            <ol>
+                <li>Primer partido con Atlético de Madrid</li>
+                <li>Primer gol en La Liga</li>
+                <li>Último partido con la selección de Uruguay</li>
+            </ol>
+        </section>
+        
+        <section id="vida-personal">
+            <h2>Vida Personal</h2>
+            <ul>
+                <li>Nacido en Rosario, Uruguay</li>
+                <li>Conocido por su liderazgo en el campo</li>
+                <li>Figura respetada tanto dentro como fuera del terreno de juego</li>
+            </ul>
+        </section>
+        
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form action="ruta/a/procesar_formulario.php" method="post">
+                <label for="nombre">Nombre y Apellidos:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <br>
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <br>
+                <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+                <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+                <br>
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+    </main>
+</body>
+</html>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #fff;
+        color: #333;
+    }
+    header {
+        background-color: #ff0000; /* Rojo */
+        color: white;
+        padding: 1em;
+        text-align: center;
+    }
+    nav ul {
+        list-style: none;
+        padding: 0;
+        background-color: #ff0000; /* Rojo */
+        text-align: center;
+    }
+    nav ul li {
+        display: inline;
+        margin: 0 1em;
+    }
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+    }
+    main {
+        padding: 1em;
+        background-color: #fff;
+        color: #333;
+    }
+    h2 {
+        color: #ff0000; /* Rojo */
+    }
+    form {
+        background-color: #fff;
+        padding: 1em;
+        border: 1px solid #ff0000; /* Rojo */
+        border-radius: 5px;
+    }
+    label, input {
+        display: block;
+        margin-bottom: 10px;
+    }
+    input[type="submit"] {
+        background-color: #ff0000; /* Rojo */
+        color: white;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+    }
+</style>
